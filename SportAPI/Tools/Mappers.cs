@@ -277,6 +277,7 @@ namespace SportAPI.Tools
                 Rpe = t.Rpe,
                 Distance = t.Distance,
                 Time = t.Time,
+                Cpt = t.Cpt,
             };
         }
 
@@ -293,6 +294,7 @@ namespace SportAPI.Tools
                 Rpe = t.Rpe,
                 Distance = t.Distance,
                 Time = t.Time,
+                Cpt = t.Cpt,
             };
         }
 

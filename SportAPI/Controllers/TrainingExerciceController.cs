@@ -24,7 +24,7 @@ namespace SportAPI.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult GetAll()
         {
-            return Ok(_trainingExerciceRepositoryBLL.GetAll());
+            return Ok(_trainingExerciceRepositoryBLL.GetAll().OrderBy(t => t.Cpt));
         }
 
         [HttpPost]

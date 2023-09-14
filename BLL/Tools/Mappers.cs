@@ -184,6 +184,7 @@ namespace BLL.Tools
                 Rpe = t.Rpe,
                 Distance = t.Distance,
                 Time = t.Time,
+                Cpt = t.Cpt,
             };
         }  
 
@@ -200,6 +201,7 @@ namespace BLL.Tools
                 Rpe = t.Rpe,
                 Distance = t.Distance,
                 Time = t.Time,
+                Cpt = t.Cpt,
             };
         }
 
