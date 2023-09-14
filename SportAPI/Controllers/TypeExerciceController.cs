@@ -34,7 +34,6 @@ namespace SportAPI.Controllers
             try
             {
                 _typeExerciceRepository.Create(Mappers.ToDAL(t));
-                //Test commit
             }
             catch (Exception e)
             {
