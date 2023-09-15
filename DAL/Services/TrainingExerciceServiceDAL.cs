@@ -22,6 +22,12 @@ namespace DAL.Services
         }
         public TrainingExerciceDAL Create(TrainingExerciceDAL t)
         {
+            // Obtenir la valeur maximale actuelle de "cpt"
+            int currentMaxCpt = _context.Training_Exercice.Max(te => te.Cpt);
+
+            // Incrémenter la valeur de "cpt" pour la nouvelle ligne
+            t.Cpt = currentMaxCpt + 1;
+
             _context.Training_Exercice.Add(t);
             _context.SaveChanges();
             return t;
